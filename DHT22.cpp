@@ -231,6 +231,13 @@ DHT22_ERROR_t DHT22::readData()
   return DHT_ERROR_CHECKSUM;
 }
 
+#if !defined(DHT22_NO_FLOAT)
+float DHT22::getTemperatureF() {
+  float temp_c = float(_lastTemperature)/10;
+  return temp_c * 9.0 / 5.0 + 32;
+}
+#endif
+
 //
 // This is used when the millis clock rolls over to zero
 //

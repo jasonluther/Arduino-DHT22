@@ -28,8 +28,8 @@ void loop(void)
   {
     case DHT_ERROR_NONE:
       Serial.print("Got Data ");
-      Serial.print(myDHT22.getTemperatureC());
-      Serial.print("C ");
+      Serial.print(myDHT22.getTemperatureF());
+      Serial.print("F ");
       Serial.print(myDHT22.getHumidity());
       Serial.println("%");
       // Alternately, with integer formatting which is clumsier but more compact to store and

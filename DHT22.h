@@ -35,6 +35,7 @@ class DHT22
 #if !defined(DHT22_NO_FLOAT)
     float getHumidity();
     float getTemperatureC();
+    float getTemperatureF();
 #endif
 };
 
