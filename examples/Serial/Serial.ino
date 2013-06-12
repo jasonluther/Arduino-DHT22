@@ -2,9 +2,9 @@
 // Only used for sprintf
 #include <stdio.h>
 
-// Data wire is plugged into port 7 on the Arduino
+// Data wire is plugged into pin 4 on the Arduino
 // Connect a 4.7K resistor between VCC and the data pin (strong pullup)
-#define DHT22_PIN 7
+#define DHT22_PIN 4
 
 // Setup a DHT22 instance
 DHT22 myDHT22(DHT22_PIN);
@@ -12,17 +12,15 @@ DHT22 myDHT22(DHT22_PIN);
 void setup(void)
 {
   // start serial port
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("DHT22 Library Demo");
+  // Sensor requires a minimum 2s warm-up after power-on.
+  delay(2001);
 }
 
 void loop(void)
 { 
   DHT22_ERROR_t errorCode;
-  
-  // The sensor can only be read from every 1-2s, and requires a minimum
-  // 2s warm-up after power-on.
-  delay(2000);
   
   Serial.print("Requesting data...");
   errorCode = myDHT22.readData();
@@ -69,4 +67,7 @@ void loop(void)
       Serial.println("Polled to quick ");
       break;
   }
+    
+  // The sensor can only be read from every 1-2s
+  delay(2000);
 }
