@@ -8,8 +8,12 @@ and RHT03 from a variety of vendors. It uses a non-standard 1-wire digital
 signalling protocol.
 
 To install this library for use with the Arduino IDE, copy it
-to the `libraries' folder and restart the IDE. For an example of
-how to use it, see File->Examples->DHT22->Serial .
+to the `libraries' folder and restart the IDE. It must be named
+DHT22, not Arduino-DHT22 (hyphens are not allowed). For an example 
+of how to use it, see File->Examples->DHT22->Serial.
+
+Version 0.6: 11-Jun-2013 by Jason Luther
+Minor cosmetic changes
 
 Version 0.5: 15-Jan-2012 by Craig Ringer
 Update to support Arduino 1.0
