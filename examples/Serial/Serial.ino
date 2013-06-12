@@ -49,7 +49,7 @@ void loop(void)
       Serial.println("%");
       break;
     case DHT_BUS_HUNG:
-      Serial.println("BUS Hung ");
+      Serial.println("Bus Hung ");
       break;
     case DHT_ERROR_NOT_PRESENT:
       Serial.println("Not Present ");
@@ -64,7 +64,7 @@ void loop(void)
       Serial.println("Data Timeout ");
       break;
     case DHT_ERROR_TOOQUICK:
-      Serial.println("Polled to quick ");
+      Serial.println("Must wait 2s before reading data again ");
       break;
   }
     
