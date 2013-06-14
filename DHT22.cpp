@@ -21,7 +21,8 @@ Humidity and Temperature Sensor DHT22 info found at
 http://www.sparkfun.com/products/10167
 
 Version 0.6: 11-Jun-2013 by Jason Luther
-Minor cosmetic changes
+Add getTemperatureF() to return the temperature in Farenheit
+Minor cosmetic changes to sample code
 
 Version 0.5: 15-Jan-2012 by Craig Ringer
 - Updated to build against Arduino 1.0

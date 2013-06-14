@@ -13,7 +13,8 @@ DHT22, not Arduino-DHT22 (hyphens are not allowed). For an example
 of how to use it, see File->Examples->DHT22->Serial.
 
 Version 0.6: 11-Jun-2013 by Jason Luther
-Minor cosmetic changes
+Add getTemperatureF() to return the temperature in Farenheit
+Minor cosmetic changes to sample code 
 
 Version 0.5: 15-Jan-2012 by Craig Ringer
 Update to support Arduino 1.0
