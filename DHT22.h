@@ -29,8 +29,9 @@ class DHT22
   public:
     DHT22(uint8_t pin);
     DHT22_ERROR_t readData();
-	short int getHumidityInt();
-	short int getTemperatureCInt();
+    short int getHumidityInt();
+    short int getTemperatureCInt();
+    short int getTemperatureFInt();
     void clockReset();
 #if !defined(DHT22_NO_FLOAT)
     float getHumidity();

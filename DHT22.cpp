@@ -234,8 +234,8 @@ DHT22_ERROR_t DHT22::readData()
 
 #if !defined(DHT22_NO_FLOAT)
 float DHT22::getTemperatureF() {
-  float temp_c = float(_lastTemperature)/10;
-  return temp_c * 9.0 / 5.0 + 32;
+  float temp_c = float(_lastTemperature)/10.0;
+  return temp_c * 9.0 / 5.0 + 32.0;
 }
 #endif
 
